@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    li {
+        @apply p-4 font-bold
+    }
+    h1 {
+        @apply  md:text-4xl font-bold
+    }
+    h2 {
+        @apply font-bold
+    }
+    h3 {
+        @apply  font-bold
+    }
+    h4 {
+        @apply font-bold
+    }
+    a {
+        @apply relative ml-10 font-mono font-bold tracking-[1px] hover:text-white
+    }
+    a::after{
+        @apply content-[''] bg-yellow-500 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
+    }
+    a:hover::after{
+        @apply w-[100%]
+    }
+     
+}
